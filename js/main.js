@@ -81,6 +81,35 @@ window.onload = function() {
                 }
                 showBag();
                 localStorage.setItem('bag', JSON.stringify(bag));
+            } else if (e.target.attributes.name.nodeValue == 'buy') {  //Code for php mail start
+                // let name = document.getElementById('customer-name').value;
+                // let email = document.getElementById('customer-email').value;
+                // let phone = document.getElementById('customer-phone').value;
+                // getJSON('php mail/mail.php', function(err, data) {
+                //     console.log(data);
+                //     if (err !== null) {
+
+                //     } else {
+
+                //     }
+                //});
+///Fetch 
+                let clientInfo = {
+                    name: document.getElementById('customer-name').value,
+                    email: document.getElementById('customer-email').value,
+                    phone: document.getElementById('customer-phone').value,
+                    bag: bag,
+                }
+
+                fetch('php_mail/mail.php',
+                {
+                    method: "POST",
+                    body: JSON.stringify(clientInfo),
+                })
+                .then(function(res) {
+                    console.log(res);
+                })
+
             }
         }
     }
