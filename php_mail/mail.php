@@ -1,6 +1,6 @@
 <?php
-$data = file_get_contents('php://input');
-var_dump($data);
+$clientInfo = file_get_contents('php://input');
+var_dump($clientInfo);
 
 //Message
 //$message = "New buy";
