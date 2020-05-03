@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bag-title {
+    display:flex;
+    justify-content: left;
+}
+
+.bag {
+    margin-left: 20px;
+}
+
+.amount {
+    display: inline-block;
+    padding: 10px;
+}
+
+.good-in-bag {
+    display: inline-block;
+    padding: 10px;
+}
+
+.count-goods {
+    display: inline-block;
+    padding: 10px;
+}
+
+.add-good {
+    margin: 10px;
+    padding: 4px 10px;
+}
+
+.remove-good {
+    margin: 10px;
+    padding: 4px 12px;
+}
+
+.delete-good {
+    margin: 10px;
+    padding: 4px 14px;
+    border-radius: 50%;
+    border: none;
+}
+
+.buy-bag {
+    display: block;
+    margin: 10px;
+}
