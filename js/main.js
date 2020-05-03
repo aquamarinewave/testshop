@@ -94,7 +94,7 @@ window.onload = function() {
                 //     }
                 //});
 ///Fetch 
-                let clientInfo = {
+                let data = {
                     name: document.getElementById('customer-name').value,
                     email: document.getElementById('customer-email').value,
                     phone: document.getElementById('customer-phone').value,
@@ -104,7 +104,7 @@ window.onload = function() {
                 fetch('php_mail/mail.php',
                 {
                     method: "POST",
-                    body: JSON.stringify(clientInfo),
+                    body: JSON.stringify(data),
                 })
                 .then(function(res) {
                     console.log(res);
